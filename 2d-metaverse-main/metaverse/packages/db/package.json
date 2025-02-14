@@ -6,7 +6,10 @@
     "build": "tsc -b"
   },
   "exports": {
-    "./client": "./src/index.ts"
+    "./client": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
   },
   "keywords": [],
   "author": "",
